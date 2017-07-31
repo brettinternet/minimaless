@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="landing-content" id="contact-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="contact">
+          {% include contact-icons.html %}
+
+          {{ content }}
+
+        </div>
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+
+  </body>
+
+</html>

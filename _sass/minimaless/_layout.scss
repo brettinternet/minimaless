@@ -1,0 +1,340 @@
+/**
+ * Site header
+ */
+.site-header {
+  border-bottom: 1px solid $grey-color-light;
+  min-height: $header-height;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-title {
+  @include relative-font-size(1.625);
+  font-weight: 300;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+.site-logo {
+  height: 30px;
+  width: auto;
+}
+
+.site-nav {
+  float: right;
+  line-height: $base-line-height * $base-font-size * 2.25;
+
+  .nav-trigger {
+      display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $text-color;
+    line-height: $base-line-height;
+    font-weight: bold;
+    text-transform: lowercase;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit / 2;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    text-align: right;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg path {
+        fill: $grey-color-dark;
+      }
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      margin-left: 20px;
+    }
+  }
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+  background: $background-dark;
+  padding: $spacing-unit 0;
+  height: $footer-height;
+  text-align: center;
+
+  .contact-icons .icon { color: #FFF; }
+}
+
+.contact-icons {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+
+  li, li + li {
+    margin: 0 7px;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .keybase-icon { fill: #FFF; }
+
+  .icon {
+    padding: 0;
+  }
+}
+
+.page-content .icon {
+  color: #111;
+}
+
+.page-content .keybase-icon {
+  fill: #111;
+}
+
+
+
+/**
+ * About/landing content
+ */
+.landing-content {
+  padding: $spacing-unit 0;
+  min-height: $content-height;
+  background: $background-dark;
+  color: #AAAAAA;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+
+  a {
+    color: #EEEEEE;
+  }
+}
+
+#contact-content {
+  min-height: $content-height;
+  background: #FFF;
+
+  .contact { transform: translateY(-50px); }
+  .contact-icons .icon { color: #111; }
+  .contact-icons .keybase-icon { fill: #111; }
+}
+
+.made-by {
+  font-size: .85em;
+  color: #FFF;
+  vertical-align: middle;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+
+  a { color: #CCC; }
+
+  .heart {
+    color: red;
+    display: inline;
+    height: 1em;
+    width: 1em;
+    vertical-align: -0.1em;
+  }
+}
+
+.about {
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+
+  p, ul {
+    font-size: 18px;
+  }
+}
+
+.contact {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+
+  p, ul {
+    font-size: 18px;
+  }
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+  padding: $spacing-unit 0;
+  min-height: $content-height;
+}
+
+.page-heading {
+  @include relative-font-size(1.25);
+}
+@for $i from 1 through 10 {
+  .blog li:nth-child(#{$i}) {
+    -webkit-animation: fadein .5s + $i/2; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein .5s + $i/2; /* Firefox < 16 */
+    -ms-animation: fadein .5s + $i/2; /* Internet Explorer */
+    -o-animation: fadein .5s + $i/2; /* Opera < 12.1 */
+    animation: fadein .5s + $i/2;
+  }
+}
+
+.post {
+  -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein .5s; /* Firefox < 16 */
+  -ms-animation: fadein .5s; /* Internet Explorer */
+  -o-animation: fadein .5s; /* Opera < 12.1 */
+  animation: fadein .5s;
+}
+
+.post a {
+  font-weight: bold;
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li h2 {
+    // margin-bottom: $spacing-unit;
+    line-height: 1em;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-author {
+  font-style: italic;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}
+
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  // margin-bottom: 5px;
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+}

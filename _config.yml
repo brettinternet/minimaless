@@ -1,0 +1,39 @@
+title: Your awesome title
+author: GitHub User
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+github_username:  brettinternet
+bitbucket_username: brettinternet
+linkedin_username: brettinternet
+twitter_username: brettinternet
+facebook_username: brettinternet
+instagram_username: brettinternet
+keybase_username: brettinternet
+
+# disqus:
+#   shortname: 
+
+files:
+  logo_path: /assets/logo.svg
+  gpgkey_path: ""
+
+# Minimaless date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minimaless:
+  date_format: "%b %-d, %Y"
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.html
+
+# Build settings
+markdown: kramdown
+theme: minimaless
+exclude:
+  - Gemfile
+  - Gemfile.lock

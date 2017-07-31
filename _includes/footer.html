@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    {% if page.layout == 'contact' %}
+      <span class="made-by">made with <img src="https://s.w.org/images/core/emoji/2.3/svg/2764.svg" alt="❤" class="heart"/> by <a href="https://github.com/brettinternet" target="_blank">brettinternet</a>
+      </span>
+    {% else %}
+      {% include contact-icons.html %}
+    {% endif %}
+
+  </div>
+</footer>
