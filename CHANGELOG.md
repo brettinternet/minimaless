@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Added Jekyll-feed for `.xml` generation for blog entries
 
 ### Fixed
-- Made site logo and gpg key paths relative
+- Made site logo and gpg key paths relative and added basename to config
 - Corrected logo logic to show sitename is `logo.*` doesn't exist in `/assets/`
 
 
