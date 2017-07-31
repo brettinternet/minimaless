@@ -5,11 +5,14 @@
     {% assign page_paths = site.header_pages | default: default_paths %}
 
     <a class="site-title"href="{{ "/blog/" | relative_url }}">
-      {% if site.files.logo_path %}
-      <img class="site-logo" src="{{ site.files.logo_path }}" alt="site logo" />
-      {% else %}
-        {{ site.title | escape }}
-      {% endif %}
+      {% for file in site.static_files %}
+        {% if file.basename == 'logo' %}
+          <img class="site-logo" src="{{ file.path }}" alt="site logo" />
+          {% break %}
+        {% elsif forloop.last == true %}
+          {{ site.title | escape }}
+        {% endif %}
+      {% endfor %}
     </a>
   
     {% if page_paths %}

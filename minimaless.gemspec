@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "minimaless"
-  spec.version       = "2.1.1"
+  spec.version       = "0.0.1"
   spec.authors       = ["brettinternet"]
 
   spec.summary       = %q{A fork from Jekyll's minima.}

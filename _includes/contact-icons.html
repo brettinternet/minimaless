@@ -47,11 +47,15 @@
   </li>
   {% endif %}
 
-  {% if site.gpgkey_path %}
-  <li>
-    <a href="{{ site.gpgkey_path }}" download><i class="icon fa fa-key"></i></a>
-  </li>
-  {% endif %}
+  {% for file in site.static_files %}
+    {% if file.ext == 'asc' %}
+      <li>
+        <a href="{{ file.path }}" download><i class="icon fa fa-key"></i></a>
+      </li>
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
   <li>
     <a href="{{ "/feed.xml" | relative_url }}"><i class="icon fa fa-rss"></i></a>
   </li>

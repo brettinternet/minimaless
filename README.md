@@ -33,28 +33,30 @@ Refers to snippets of code within the `_includes` directory that can be inserted
   - `google-analytics.html` &mdash; Inserts Google Analytics module (active only in production environment).
   - `head.html` &mdash; Code-block that defines the `<head></head>` in *default* layout.
   - `header.html` &mdash; Defines the site's main header section. By default, pages with a defined `title` attribute will have links displayed here.
-  - `icon-* files` &mdash; Inserts github and twitter ids with respective icons.
+  - `contact-icons.html` &mdash; Inserts social icons when you specify a social media site `*_username` in the config.
+    - You can also add an `.asc` file for a key icon to appear for users to download your GPG key file.
 
 ## Usage
 
 ### Customization
 
-To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
-e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minima gem folder to `<yoursite>/_includes` and start editing that file.
+To override the default structure and style of minimaless, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
+e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minimaless gem folder to `<yoursite>/_includes` and start editing that file.
 
 The site's default CSS has now moved to a new place within the gem itself, [`assets/main.scss`](assets/main.scss). To **override the default CSS**, the file has to exist at your site source. Do either of the following:
 - Create a new instance of `main.scss` at site source.
   - Create a new file `main.scss` at `<your-site>/assets/`
   - Add the frontmatter dashes, and
-  - Add `@import "minima";`, to `<your-site>/assets/main.scss`
+  - Add `@import "minimaless";`, to `<your-site>/assets/main.scss`
   - Add your custom CSS.
 - Download the file from this repo
   - Create  a new file `main.scss` at `<your-site>/assets/`
   - Copy the contents at [assets/main.scss](assets/main.scss) onto the `main.scss` you just created, and edit away!
-- Copy directly from Minima 2.0 gem
-  - Go to your local minima gem installation directory ( run `bundle show minima` to get the path to it ).
+- Copy directly from Minimaless gem
+  - Go to your local minimaless gem installation directory ( run `bundle show minimaless` to get the path to it ).
   - Copy the `assets/` folder from there into the root of `<your-site>`
   - Change whatever values you want, inside `<your-site>/assets/main.scss`
+- Edit index.md to change what appears on the site's splash/landing page.
 
 --
 
@@ -89,10 +91,9 @@ Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
 
 
 
-
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/minima. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/brettinternet/minimaless.
 
 ## Development
 

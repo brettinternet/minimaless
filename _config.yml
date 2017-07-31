@@ -17,10 +17,6 @@ keybase_username: brettinternet
 # disqus:
 #   shortname: 
 
-files:
-  logo_path: /assets/logo.svg
-  gpgkey_path: ""
-
 # Minimaless date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minimaless:
@@ -30,6 +26,9 @@ minimaless:
 # this and add the path to the pages in order as they should show up
 #header_pages:
 # - about.html
+
+plugins:
+  - jekyll-feed
 
 # Build settings
 markdown: kramdown
