@@ -13,4 +13,4 @@ This is a good theme for portfolios and blogs. It's not a good theme for meeting
 [brettinternet](https://github.com/brettinternet) /
 [minimaless](https://github.com/brettinternet/minimaless).
 
-Visit the [blog](minimaless/blog/) or you can [contact](contact/) the creator.
+Visit the [blog](blog/) or you can [contact](contact/) the creator.
