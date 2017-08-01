@@ -50,7 +50,7 @@
   {% for file in site.static_files %}
     {% if file.ext == 'asc' %}
       <li>
-        <a href="{{ site.baseurl }}{{ file.path }}" download><i class="icon fa fa-key"></i></a>
+        <a href="{{ file.path | relative_url }}" download><i class="icon fa fa-key"></i></a>
       </li>
       {% break %}
     {% endif %}
