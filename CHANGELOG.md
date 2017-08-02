@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 - Screenshot of blog page added
+- Created a very simple setup guide for new users
 
 ## 0.0.2 // 2017-07-31
 ### Added

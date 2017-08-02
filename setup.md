@@ -8,7 +8,7 @@ permalink: /setup/
 2. Create a new Jekyll project with `jekyll new <your-project-name>`
 3. Edit the `Gemfile` and replace the line indicating the default theme with:
 ```yml
-gem "minimaless", "~> 0.0.2" # or the most recent version
+gem "minimaless"
 ```
 4. Run `bundle install` to install minimaless
 5. Add the following files to app's root-level folder:
