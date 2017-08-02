@@ -24,7 +24,7 @@
 }
 
 .site-logo {
-  height: 30px;
+  height: 20px;
   width: auto;
 }
 
@@ -245,7 +245,7 @@
   @include relative-font-size(1.25);
 }
 @for $i from 1 through 10 {
-  .blog li:nth-child(#{$i}) {
+  .blog li:nth-child(#{$i}), .contact .contact-icons li:nth-child(#{$i}) {
     -webkit-animation: fadein .5s + $i/2; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein .5s + $i/2; /* Firefox < 16 */
     -ms-animation: fadein .5s + $i/2; /* Internet Explorer */
