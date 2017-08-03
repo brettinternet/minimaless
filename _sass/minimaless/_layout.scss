@@ -24,7 +24,7 @@
 }
 
 .site-logo {
-  height: 20px;
+  height: 30px;
   width: auto;
 }
 
@@ -314,4 +314,9 @@
       @include relative-font-size(1.125);
     }
   }
+}
+
+.fa-external-link {
+  font-size: .8rem;
+  margin-left: 5px;
 }
