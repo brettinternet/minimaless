@@ -201,36 +201,11 @@
   }
 }
 
-.about {
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s; /* Firefox < 16 */
-  -ms-animation: fadein 3s; /* Internet Explorer */
-  -o-animation: fadein 3s; /* Opera < 12.1 */
-  animation: fadein 3s;
-
+.about, .contact {
   p, ul {
     font-size: 18px;
   }
 }
-
-.contact {
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
-
-  p, ul {
-    font-size: 18px;
-  }
-}
-
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 
 
 /**
@@ -245,7 +220,9 @@
   @include relative-font-size(1.25);
 }
 @for $i from 1 through 10 {
-  .blog li:nth-child(#{$i}), .contact .contact-icons li:nth-child(#{$i}) {
+  .blog li:nth-child(#{$i}),
+  .contact .contact-icons li:nth-child(#{$i}),
+  .landing-content .about p:nth-child(#{$i}) {
     -webkit-animation: fadein .5s + $i/2; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein .5s + $i/2; /* Firefox < 16 */
     -ms-animation: fadein .5s + $i/2; /* Internet Explorer */

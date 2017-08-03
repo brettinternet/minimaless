@@ -5,7 +5,10 @@ permalink: /setup/
 ---
 
 1. [Install Jekyll](https://jekyllrb.com/docs/quickstart/)
-2. Create a new Jekyll project with `jekyll new <your-project-name>`
+2. Create a new Jekyll project with
+```
+jekyll new <your-project-name>
+```
 3. Edit the `Gemfile` and replace the line indicating the default theme with:
 ```yml
 gem "minimaless"
