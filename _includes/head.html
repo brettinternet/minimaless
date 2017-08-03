@@ -6,7 +6,12 @@
   <title>{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link rel="icon" type="image/png" href="/favicon.png">
+  {% for file in site.static_files %}
+    {% if file.basename == 'favicon' %}
+      <link rel="icon" type="image/png" href="{{ file.path | relative_url }}">
+      {% break %}
+    {% endif %}
+  {% endfor %}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
