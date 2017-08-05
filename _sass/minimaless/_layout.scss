@@ -11,7 +11,7 @@
 
 .site-title {
   @include relative-font-size(1.625);
-  font-weight: 300;
+  font-weight: bold;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -317,6 +317,8 @@
 }
 
 .fa-external-link {
-  font-size: .8rem;
+  font-size: .7rem;
   margin-left: 5px;
+  margin-right: 2px;
+  color: lighten($grey-color-dark, 10%);
 }

@@ -2,10 +2,10 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "minimaless"
-  spec.version       = "0.0.4"
+  spec.version       = "0.0.6"
   spec.authors       = ["brettinternet"]
 
-  spec.summary       = %q{A fork from Jekyll's minima.}
+  spec.summary       = %q{Like Jekyll's minima theme, but less.}
   spec.homepage      = "https://github.com/brettinternet/minimaless"
   spec.license       = "MIT"
 

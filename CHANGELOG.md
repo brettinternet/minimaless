@@ -4,14 +4,15 @@ All notable changes to this project will be documented here.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 0.0.6 // 2017-08-04
+### Added
+- Custom `.travis.yml` for remote building
+- Rakefile for building to separate branch and travis ci hook
+
 ## 0.0.5 // 2017-08-02
 ### Added
 - CSS support for external link icons with `<i class="fa fa-external-link"></i>`
-- Other CSS tinkering
-
-## 0.0.4 // 2017-08-02
-### Added
-- Added favicon to `/assets/`
+- Other minor styling
 
 ## 0.0.3 // 2017-08-01
 ### Changed

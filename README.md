@@ -4,7 +4,9 @@ It's like [minima](https://jekyll.github.io/minima/), but less. ✨
 
 ![minimaless screenshot preview](/screenshot.png)
 
-See the [demo site](https://brettinternet.github.io/minimaless/). Learn [how to setup](/setup.md) a Jekyll site with this theme. The gem is found [here]()
+See the [demo site](https://brettinternet.github.io/minimaless/). Follow these steps to [setup](/setup.md) your own Jekyll site with this theme.
+
+The gem is found [here](https://rubygems.org/gems/minimaless).
 
 ## Installation
 
