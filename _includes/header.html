@@ -4,7 +4,16 @@
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
 
-    <a class="site-title"href="{{ "/blog/" | relative_url }}">
+    <!-- If not using blog, make home link go to root page -->
+    <!-- {% for page in site.pages %} -->
+    <!--   {% if site.home_page != blank and page.title == site.home_page %} -->
+    <!--     <a class="site-title"href="{{ page.url | relative_url }}"> -->
+    <!--   {% elsif forloop.last == true %} -->
+    <!--     <a class="site-title"href="{{ "/" | relative_url }}"> -->
+    <!--   {% endif %} -->
+    <!-- {% endfor %} -->
+
+      <a class="site-title"href="{{ "/blog/" | relative_url }}">
       {% for file in site.static_files %}
         {% if file.basename == 'logo' %}
         <img class="site-logo" src="{{ file.path | relative_url }}" alt="site logo" />

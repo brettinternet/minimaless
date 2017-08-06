@@ -1,4 +1,11 @@
 <ul class="contact-icons">
+
+  {% if site.website %}
+  <li>
+    <a href="{{ site.website }}" target="_blank"><i class="icon fa fa-globe"></i></a>
+  </li>
+  {% endif %}
+
   {% if site.github_username %}
   <li>
     <a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="icon fa fa-github"></i></a>
@@ -56,7 +63,12 @@
     {% endif %}
   {% endfor %}
 
-  <li>
-    <a href="{{ "/feed.xml" | relative_url }}"><i class="icon fa fa-rss"></i></a>
-  </li>
+  {% for page in site.pages %}
+    {% if page.layout == 'blog' %}
+    <li>
+      <a href="{{ "/feed.xml" | relative_url }}"><i class="icon fa fa-rss"></i></a>
+    </li>
+    {% endif %}
+  {% endfor %}
+
 </ul>

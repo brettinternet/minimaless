@@ -6,6 +6,9 @@ description: >
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
+# home_page: blog
+
+website: https://google.com
 github_username:  brettinternet
 bitbucket_username: brettinternet
 linkedin_username: brettinternet
@@ -21,6 +24,7 @@ keybase_username: brettinternet
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minimaless:
   date_format: "%b %-d, %Y"
+permalink: /blog/:year/:title
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up

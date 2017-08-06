@@ -4,6 +4,10 @@ All notable changes to this project will be documented here.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 0.0.7 // 2017-08-06
+### Added
+- Created splash page for single page sites or immersive intro without header/footer
+
 ## 0.0.6 // 2017-08-04
 ### Added
 - Custom `.travis.yml` for remote building

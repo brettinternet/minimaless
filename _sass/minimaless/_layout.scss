@@ -155,7 +155,6 @@
   padding: $spacing-unit 0;
   min-height: $content-height;
   background: $background-dark;
-  color: #AAAAAA;
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
@@ -207,6 +206,12 @@
   }
 }
 
+.about, .splash { color: #AAAAAA; }
+
+#splash {
+  min-height: 100vh;
+  padding: 0;
+}
 
 /**
  * Page content
@@ -222,6 +227,8 @@
 @for $i from 1 through 10 {
   .blog li:nth-child(#{$i}),
   .contact .contact-icons li:nth-child(#{$i}),
+  .splash p:nth-child(#{$i}),
+  .splash .contact-icons li:nth-child(#{$i}),
   .landing-content .about p:nth-child(#{$i}) {
     -webkit-animation: fadein .5s + $i/2; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein .5s + $i/2; /* Firefox < 16 */
