@@ -75,5 +75,4 @@ exclude:
   - node_modules
   - package.json
   - Rakefile
-  - README
   - tmp
