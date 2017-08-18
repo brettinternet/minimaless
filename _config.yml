@@ -17,6 +17,22 @@ facebook_username: brettinternet
 instagram_username: brettinternet
 keybase_username: brettinternet
 
+# use Font Awesome icon names http://fontawesome.io/icons/
+links:
+  - url: https://google.com
+    title: Google
+  - url: https://google.com
+    title: My Resume
+    icon: paperclip
+  - url: https://google.com
+    title: My Portfolio
+    icon: user-circle
+  - url: https://google.com
+    title: A really cool blog I like
+    icon: false
+  - url: https://google.com
+    title: Cool Site
+
 # disqus:
 #   shortname: 
 
@@ -33,10 +49,14 @@ permalink: /blog/:year/:title
 
 plugins:
   - jekyll-feed
+  - jekyll-gist
+  - jekyll-sitemap
 
-# Build settings
 markdown: kramdown
 theme: minimaless
+
+include:
+  - _pages
 exclude:
   - vendor
   - .asset-cache

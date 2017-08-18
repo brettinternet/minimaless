@@ -1,0 +1,15 @@
+<ul class="site-links">
+  {% for link in site.links %}
+      <li>
+        <a href="{{ link.url }}" target="_blank">
+          {% if link.icon != false %}
+            <i class="icon fa fa-{% if link.icon %}{{ link.icon }}{% else %}globe{% endif %}"></i>
+          {% endif %}
+          {% if link.title %}
+            <p>{{ link.title }}</p>
+          {% endif %}
+        </a>
+      </li>
+  {% endfor %}
+</ul>
+

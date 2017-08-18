@@ -115,14 +115,17 @@
   padding: $spacing-unit 0;
   height: $footer-height;
   text-align: center;
-
-  .contact-icons .icon { color: #FFF; }
 }
 
 .contact-icons {
   list-style: none;
-  margin: 0;
+  margin: 10px 0 0 0;
   text-align: center;
+  @include media-query($on-palm) {
+    text-align: left;
+  }
+
+  a { height: 100%; width: 100%; }
 
   li, li + li {
     margin: 0 7px;
@@ -131,7 +134,9 @@
     display: inline-block;
   }
 
-  .keybase-icon { fill: #FFF; }
+  li:first-child { margin-left: 0; }
+  li:last-child { margin-right: 0; }
+
 
   .icon {
     padding: 0;
@@ -142,11 +147,20 @@
   color: #111;
 }
 
-.page-content .keybase-icon {
-  fill: #111;
-}
 
 
+.landing-content .contact-icons a, .site-footer .contact-icons a {
+    color: #FFF;
+    &:hover {
+      color: $pastel-red;
+    }
+    .keybase-icon {
+      fill: #FFF;
+      &:hover {
+        fill: $pastel-red;
+      }
+    }
+  }
 
 /**
  * About/landing content
@@ -166,7 +180,10 @@
   justify-content: center;
 
   a {
-    color: #EEEEEE;
+    color: #EEE;
+    &:hover {
+      color: $pastel-red;
+    }
   }
 }
 
@@ -175,8 +192,18 @@
   background: #FFF;
 
   .contact { transform: translateY(-50px); }
-  .contact-icons .icon { color: #111; }
-  .contact-icons .keybase-icon { fill: #111; }
+  .contact-icons .icon {
+    color: #111;
+    &:hover {
+      color: $pastel-red;
+    }
+  }
+  .contact-icons .icon .keybase-icon {
+    fill: #111;
+    &:hover {
+      fill: $pastel-red;
+    }
+  }
 }
 
 .made-by {
@@ -213,6 +240,7 @@
   padding: 0;
 }
 
+
 /**
  * Page content
  */
@@ -228,7 +256,7 @@
   .blog li:nth-child(#{$i}),
   .contact .contact-icons li:nth-child(#{$i}),
   .splash p:nth-child(#{$i}),
-  .splash .contact-icons li:nth-child(#{$i}),
+  .splash .contact-icons li:nth-child(#{$i}), .site-links li:nth-child(#{$i}),
   .landing-content .about p:nth-child(#{$i}) {
     -webkit-animation: fadein .5s + $i/2; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein .5s + $i/2; /* Firefox < 16 */
@@ -274,6 +302,28 @@
   @include relative-font-size(1.5);
 }
 
+
+.site-links {
+  margin: 0 auto;
+  max-width: 310px;
+  a { color: inherit; }
+
+  li {
+    display: inline-block;
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  li a {
+    height:100px;
+    width:100px;
+    display:table-cell;
+    vertical-align : middle;
+    text-align: center;
+    .icon { font-size: 1.5em; }
+    p { margin: 0; }
+  }
+}
 
 
 

@@ -100,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   color: $brand-color;
+  fill: $brand-color;
   text-decoration: none;
   cursor: pointer;
 
@@ -110,15 +111,6 @@ a {
   &:hover {
     color: $text-color;
     text-decoration: underline;
-  }
-
-  .contact-icons &:hover {
-    text-decoration: none;
-    color: lighten($brand-color, 25%);
-
-    .username {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -203,21 +195,7 @@ pre {
 /**
  * Icons
  */
-.icon > svg {
-  display: inline-block;
-  vertical-align: middle;
-
-  path {
-    fill: $grey-color;
-  }
-}
-
-.social-media-list {
-  .icon {
-    padding-right: 5px;
-  }
-
-  li + li {
-    padding-top: 5px;
-  }
+.keybase-icon {
+  transform: translateY(2px);
+  height: 17px;
 }
