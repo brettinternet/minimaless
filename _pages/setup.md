@@ -1,8 +1,23 @@
 ---
 layout: page
-title: Setup
+title: Features & Setup
 permalink: /setup/
 ---
+
+# Features
+
+- Blog in markdown using [Jekyll](jekyllrb.com)!
+- Include any Font Awesome icon <i class="fa fa-check-square"></i>
+```html
+<i class="fa fa-check-square"></i>
+```
+- You can [display links](/links/) for users to checkout
+- Use a [splash page](/splash/) with no header or footer
+
+
+---
+
+# Setup
 
 This setup guide is for deploying to Github-pages. This is a very specific method, and if you're looking for a more general setup guide, check out [this guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
@@ -24,13 +39,13 @@ gem "minimaless"
 ```
 4. Run `bundle install` to install minimaless
 5. Add the following files to app's root-level folder:
-    1. Add an `index.md` file with the following header:
+    - Add an `index.md` file with the following header:
         ```yml
         ---
         layout: about
         ---
         ```
-    2. Add `blog.md`:
+    - Add `blog.md`:
         ```yml
         ---
         layout: blog
@@ -38,7 +53,7 @@ gem "minimaless"
         permalink: /blog/
         ---
         ```
-    3. Add `contact.md`:
+    - Add `contact.md`:
         ```yml
         ---
         layout: contact
@@ -46,7 +61,7 @@ gem "minimaless"
         permalink: /contact/
         ---
         ```
-6. [Copy the project's](https://github.com/brettinternet/minimaless/blob/master/_config.yml) `_config.yml` and paste it over the existing config file. Replace the variable definitions to customize your site.
+6. [Copy](https://github.com/brettinternet/minimaless/blob/master/_config.yml) the project's `_config.yml` and paste it over the existing config file. Replace the variable definitions to customize your site.
 7. Include a description of yourself or the site in the `index.md`.
 8. Create a directory called `assets/` and add a `logo.svg` (or any vector/image file extension you prefer) and a `favicon.png` for your site.
 9. You may consider using something like [prose.io](http://prose.io) to manage your blog posts from the web.

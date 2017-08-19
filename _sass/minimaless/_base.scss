@@ -10,9 +10,17 @@
 // }
 
 body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
+p, blockquote, pre,
 dl, dd, ol, ul, figure {
   margin: 0;
+  padding: 0;
+}
+
+hr {
+  border-width: .5px;
+  border-color: #EFEFEF;
+  color: #FFF;
+  margin: $spacing-unit 0;
   padding: 0;
 }
 
@@ -43,6 +51,10 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
+}
+
+pre {
+  margin-top: $spacing-unit / 6;
 }
 
 

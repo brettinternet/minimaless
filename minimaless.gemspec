@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "minimaless"
-  spec.version       = "0.0.7"
+  spec.version       = "0.0.8"
   spec.authors       = ["brettinternet"]
 
   spec.summary       = %q{Like Jekyll's minima theme, but less.}

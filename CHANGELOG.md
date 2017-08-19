@@ -4,6 +4,19 @@ All notable changes to this project will be documented here.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+
+## 0.0.8 // 2017-08-19
+### Changed
+- Changed front page back to blog, and /about/ to the landing page
+- Allow user to set page title case
+
+### Added
+- Added splash page and links page
+
+### Fixed
+- Fixed keybase icon hover
+- Fixed `header_pages` settings specification in config
+
 ## 0.0.7 // 2017-08-06
 ### Added
 - Created splash page for single page sites or immersive intro without header/footer
@@ -35,7 +48,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 - Made site logo and gpg key paths relative
 - Corrected logo logic to show sitename is `logo.*` doesn't exist in `/assets/`
-
 
 ## 0.0.1 // 2017-07-30
 ### Added

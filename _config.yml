@@ -40,17 +40,26 @@ links:
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minimaless:
   date_format: "%b %-d, %Y"
-permalink: /blog/:year/:title
+permalink: /:year/:title
+paginate: 2
+paginate_path: "/page:num/"
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.html
+header_pages:
+  - _pages/blog.md
+  - _pages/about.md
+  - _pages/contact.md
+  - _pages/setup.md
+  - _pages/github.md
 
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-archives
+  - jekyll-paginate
 
 markdown: kramdown
 theme: minimaless

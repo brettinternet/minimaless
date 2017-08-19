@@ -1,15 +1,15 @@
-<ul class="site-links">
+<div class="site-links">
   {% for link in site.links %}
-      <li>
+      <p>
         <a href="{{ link.url }}" target="_blank">
           {% if link.icon != false %}
             <i class="icon fa fa-{% if link.icon %}{{ link.icon }}{% else %}globe{% endif %}"></i>
           {% endif %}
           {% if link.title %}
-            <p>{{ link.title }}</p>
+            <span>{{ link.title }}</span>
           {% endif %}
         </a>
-      </li>
+      </p>
   {% endfor %}
-</ul>
+</div>
 

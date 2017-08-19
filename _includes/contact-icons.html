@@ -65,9 +65,10 @@
 
   {% for page in site.pages %}
     {% if page.layout == 'blog' %}
-    <li>
-      <a href="{{ "/feed.xml" | relative_url }}"><i class="icon fa fa-rss"></i></a>
-    </li>
+      <li>
+        <a href="{{ "/feed.xml" | relative_url }}"><i class="icon fa fa-rss"></i></a>
+      </li>
+      {% break %}
     {% endif %}
   {% endfor %}
 
