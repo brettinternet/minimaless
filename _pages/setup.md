@@ -1,8 +1,28 @@
 ---
 layout: page
-title: Setup
+title: Features & Setup
 permalink: /setup/
 ---
+
+# Features
+
+- Blog in markdown using [Jekyll](jekyllrb.com)!
+- Include any Font Awesome icon <i class="fa fa-check-square"></i>
+```html
+<i class="fa fa-check-square"></i>
+```
+- Use icons and other HTML mixed with your marked down
+  (ex: [external link<i class="fa fa-external-link"></i>](https://google.com){:target="_blank"})
+```
+[external link<i class="fa fa-external-link"></i>](https://google.com){:target="_blank"}
+```
+- You can [display links](/links/) for users to checkout
+- Use a [splash page](/splash/) with no header or footer
+
+
+---
+
+# Setup
 
 This setup guide is for deploying to Github-pages. This is a very specific method, and if you're looking for a more general setup guide, check out [this guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
@@ -24,13 +44,13 @@ gem "minimaless"
 ```
 4. Run `bundle install` to install minimaless
 5. Add the following files to app's root-level folder:
-    1. Add an `index.md` file with the following header:
+    - Add an `index.md` file with the following header:
         ```yml
         ---
         layout: about
         ---
         ```
-    2. Add `blog.md`:
+    - Add `blog.md`:
         ```yml
         ---
         layout: blog
@@ -38,7 +58,7 @@ gem "minimaless"
         permalink: /blog/
         ---
         ```
-    3. Add `contact.md`:
+    - Add `contact.md`:
         ```yml
         ---
         layout: contact
@@ -46,12 +66,13 @@ gem "minimaless"
         permalink: /contact/
         ---
         ```
-6. Copy the project's [`_config.yml`](https://github.com/brettinternet/minimaless/blob/master/_config.yml) and paste it over the existing config file. Replace the variable definitions to customize your site.
+6. [Copy](https://github.com/brettinternet/minimaless/blob/master/_config.yml) the project's `_config.yml` and paste it over the existing config file. Replace the variable definitions to customize your site.
 7. Include a description of yourself or the site in the `index.md`.
 8. Create a directory called `assets/` and add a `logo.svg` (or any vector/image file extension you prefer) and a `favicon.png` for your site.
 9. Copy the [Rakefile](https://github.com/brettinternet/minimaless/blob/master/Rakefile) and Rakefile configuration settings at the bottom of `_config.yml`.
     1. Change these variables to match your own settings.
     2. Add your encrypted GH token (notes on how to encrypt are commented in the `.travis.yml`).
+    3. Add `gem 'rake', '12.0.0'` to your `Gemfile`.
 10. Turn on building in Travis CI for your site's repo. Then, push your site's source code to a new branch called `source` and the build should trigger and run the Rakefile. Once the build is push to `master`, Travis CI may attempt to build the master repo (and fail) unless you select the option to only run Travis CI when a `.travis.yml` is present.
     - Instead of using Travis CI to build your site remotely when you push, you could also build your site locally and push your site to a separate `gh-pages` branch by [following these instructions](https://gist.github.com/cobyism/4730490).
 11. You may consider using something like [prose.io](http://prose.io) to manage your blog posts from the web.
