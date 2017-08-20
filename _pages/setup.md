@@ -11,13 +11,15 @@ permalink: /setup/
 ```html
 <i class="fa fa-check-square"></i>
 ```
-- Use icons and other HTML mixed with your marked down
+- Use icons and other HTML mixed with your markdown
   (ex: [external link<i class="fa fa-external-link"></i>](https://google.com){:target="_blank"})
 ```
 [external link<i class="fa fa-external-link"></i>](https://google.com){:target="_blank"}
 ```
-- You can [display links](/links/) for users to checkout
+- You can [display links](/links/) for users to checkout in your portfolio
 - Use a [splash page](/splash/) with no header or footer
+- Include a preview of posts or not with `preview_posts: true`
+- Change the number of posts on each page with `paginate` in the config
 
 
 ---

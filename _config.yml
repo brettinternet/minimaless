@@ -42,6 +42,7 @@ links:
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minimaless:
   date_format: "%b %-d, %Y"
+preview_posts: true
 permalink: /:year/:title
 paginate: 2
 paginate_path: "/page:num/"

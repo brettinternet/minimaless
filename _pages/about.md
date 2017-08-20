@@ -10,4 +10,6 @@ This is a good theme for portfolios and blogs. It's not a good theme for meeting
 [brettinternet<i class="fa fa-external-link"></i>](https://github.com/brettinternet){:target="_blank"} /
 [minimaless<i class="fa fa-external-link"></i>](https://github.com/brettinternet/minimaless){:target="_blank"}.
 
-Visit the [blog](blog/) or you can [contact](contact/) the creator.
+---
+
+Visit the [blog](blog/) or [contact](contact/) the creator.

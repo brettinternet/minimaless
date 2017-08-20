@@ -107,6 +107,7 @@
 .pagination {
   text-align: center;
   margin: $spacing-unit * 2 0;
+  color: $grey-color;
 
   // .page_number
 
@@ -274,7 +275,8 @@
   .contact .contact-icons li:nth-child(#{$i}),
   .splash p:nth-child(#{$i}),
   .splash .contact-icons li:nth-child(#{$i}), .site-links p:nth-child(#{$i}),
-  .landing-content .about p:nth-child(#{$i}) {
+  .landing-content .about p:nth-child(#{$i}),
+  .pagination span:nth-child(#{$i}) {
     -webkit-animation: fadein .5s + $i/2; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein .5s + $i/2; /* Firefox < 16 */
     -ms-animation: fadein .5s + $i/2; /* Internet Explorer */

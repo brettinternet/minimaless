@@ -15,6 +15,11 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
+        {% if site.preview_posts %}
+        <p>
+          {{ post.content | strip_html | truncatewords:25 }}
+        </p>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
@@ -25,7 +30,7 @@ layout: default
     {% else %}
       <span class="previous disabled"><i class="fa fa-arrow-circle-o-left"></i></span>
     {% endif %}
-    <span class="page-number ">{{ paginator.page }} | {{ paginator.total_pages }}</span>
+    <span class="page-number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next"><i class="fa fa-arrow-circle-right"></i></a>
     {% else %}
