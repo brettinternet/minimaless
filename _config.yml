@@ -6,7 +6,8 @@ description: >
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-# home_page: blog
+baseurl: "/minimaless" # the subpath of your site, e.g. /blog
+url: "http://www.brettgardiner.net/minimaless" # the base hostname & protocol for your site, e.g. http://example.com
 
 website: https://google.com
 github_username:  brettinternet
