@@ -11,6 +11,11 @@ permalink: /setup/
 ```html
 <i class="fa fa-check-square"></i>
 ```
+- Use icons and other HTML mixed with your marked down
+  (ex: [external link<i class="fa fa-external-link"></i>](https://google.com){:target="_blank"})
+```
+[external link<i class="fa fa-external-link"></i>](https://google.com){:target="_blank"}
+```
 - You can [display links](/links/) for users to checkout
 - Use a [splash page](/splash/) with no header or footer
 
@@ -67,6 +72,7 @@ gem "minimaless"
 9. Copy the [Rakefile](https://github.com/brettinternet/minimaless/blob/master/Rakefile) and Rakefile configuration settings at the bottom of `_config.yml`.
     1. Change these variables to match your own settings.
     2. Add your encrypted GH token (notes on how to encrypt are commented in the `.travis.yml`).
+    3. Add `gem 'rake', '12.0.0'` to your `Gemfile`.
 10. Turn on building in Travis CI for your site's repo. Then, push your site's source code to a new branch called `source` and the build should trigger and run the Rakefile. Once the build is push to `master`, Travis CI may attempt to build the master repo (and fail) unless you select the option to only run Travis CI when a `.travis.yml` is present.
     - Instead of using Travis CI to build your site remotely when you push, you could also build your site locally and push your site to a separate `gh-pages` branch by [following these instructions](https://gist.github.com/cobyism/4730490).
 11. You may consider using something like [prose.io](http://prose.io) to manage your blog posts from the web.

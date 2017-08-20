@@ -104,6 +104,24 @@
   }
 }
 
+.pagination {
+  text-align: center;
+  margin: $spacing-unit * 2 0;
+
+  // .page_number
+
+  .previous, .next { @include relative-font-size(1.25); }
+  .previous {
+    margin-right: $spacing-unit;
+  }
+
+  .next {
+    margin-left: $spacing-unit;
+  }
+
+  .disabled > i { color: $grey-color-light; }
+}
+
 
 
 /**
@@ -251,11 +269,11 @@
 .page-heading {
   @include relative-font-size(1.25);
 }
-@for $i from 1 through 10 {
+@for $i from 1 through 15 {
   .blog li:nth-child(#{$i}),
   .contact .contact-icons li:nth-child(#{$i}),
   .splash p:nth-child(#{$i}),
-  .splash .contact-icons li:nth-child(#{$i}), .site-links li:nth-child(#{$i}),
+  .splash .contact-icons li:nth-child(#{$i}), .site-links p:nth-child(#{$i}),
   .landing-content .about p:nth-child(#{$i}) {
     -webkit-animation: fadein .5s + $i/2; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein .5s + $i/2; /* Firefox < 16 */
@@ -301,6 +319,13 @@
   @include relative-font-size(1.5);
 }
 
+
+
+
+
+/**
+ * Links page
+ */
 
 .site-links {
   margin: 20px auto;
