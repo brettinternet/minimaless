@@ -107,9 +107,16 @@
 .pagination {
   text-align: center;
   margin: $spacing-unit * 2 0;
-  color: $grey-color;
+  // color: $grey-color-light;
 
-  // .page_number
+  & > a { color: $grey-color-dark; }
+
+  .fa-long-arrow-left, .fa-long-arrow-right { transform: translateY(3px); }
+
+  .page-number {
+    color: $grey-color !important;
+    @include relative-font-size(.8);
+  }
 
   .previous, .next { @include relative-font-size(1.25); }
   .previous {
@@ -226,7 +233,7 @@
 
 .made-by {
   font-size: .85em;
-  color: #FFF;
+  color: #AAA;
   vertical-align: middle;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -234,7 +241,7 @@
   -o-animation: fadein 3s; /* Opera < 12.1 */
   animation: fadein 3s;
 
-  a { color: #CCC; }
+  a { color: #EEE; }
 
   .heart {
     color: red;
@@ -399,13 +406,16 @@
   color: lighten($grey-color-dark, 10%);
 }
 
+.tags .fa-tags { color: $grey-color; }
+
 .tag {
   @include relative-font-size(.8);
-  color: #FFF;
-  background-color: $grey-color;
+  color: $text-color;
+  background-color: $grey-color-light;
   font-weight: normal;
-  padding: 4px 7px;
+  padding: 2px 5px;
   &:hover {
+    color: $grey-color-light;
     background-color: $grey-color-dark;
     text-decoration: underline;
   }

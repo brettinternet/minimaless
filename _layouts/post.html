@@ -21,9 +21,11 @@ layout: default
 
   {% if page.tags != '' %}
   <div class="tags">
+    <i class="fa fa-tags"></i>
     {% for tag in page.tags %}
       {% assign count = site.tags[tag].size %}
-      <a href="#{{ tag }}"><span class="tag">{{ tag | escape }}{% if count != 1 %}<span class="tag-count">({{ count }})</span>{% endif %}</span></a>
+      <a href="#{{ tag }}">
+        <span class="tag">{{ tag | escape }}{% if count != 1 %}<span class="tag-count">({{ count }})</span>{% endif %}</span></a>
     {% endfor %}
   </div>
   {% endif %}
