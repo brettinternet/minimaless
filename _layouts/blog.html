@@ -24,19 +24,21 @@ layout: default
     {% endfor %}
   </ul>
 
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous"><i class="fa fa-arrow-circle-left"></i></a>
-    {% else %}
-      <span class="previous disabled"><i class="fa fa-arrow-circle-o-left"></i></span>
-    {% endif %}
-    <span class="page-number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next"><i class="fa fa-arrow-circle-right"></i></a>
-    {% else %}
-      <span class="next disabled"><i class="fa fa-arrow-circle-o-right"></i></span>
-    {% endif %}
-  </div>
+  {% if paginator.total_pages != 1 %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous"><i class="fa fa-arrow-circle-left"></i></a>
+      {% else %}
+        <span class="previous disabled"><i class="fa fa-arrow-circle-o-left"></i></span>
+      {% endif %}
+      <span class="page-number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next"><i class="fa fa-arrow-circle-right"></i></a>
+      {% else %}
+        <span class="next disabled"><i class="fa fa-arrow-circle-o-right"></i></span>
+      {% endif %}
+    </div>
+  {% endif %}
 
 
 </div>

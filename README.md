@@ -2,11 +2,9 @@
 
 It's like [minima](https://jekyll.github.io/minima/), but less. ✨
 
+See the [demo site](https://brettinternet.github.io/minimaless/). Follow these steps to [setup](/_pages/setup.md) your own Jekyll site with this theme.
+
 ![minimaless screenshot preview](/screenshot.png)
-
-See the [demo site](https://brettinternet.github.io/minimaless/). Follow these steps to [setup](/setup.md) your own Jekyll site with this theme.
-
-The gem is found [here](https://rubygems.org/gems/minimaless).
 
 ## Installation
 
@@ -15,6 +13,8 @@ Add this line to your Jekyll site's Gemfile:
 ```ruby
 gem "minimaless"
 ```
+
+If you're interested, the gem is found [here](https://rubygems.org/gems/minimaless).
 
 And add this line to your Jekyll site:
 

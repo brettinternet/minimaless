@@ -16,8 +16,8 @@ permalink: /setup/
 ```
 [external link<i class="fa fa-external-link"></i>](https://google.com){:target="_blank"}
 ```
-- You can [display links](/links/) for users to checkout in your portfolio
-- Use a [splash page](/splash/) with no header or footer
+- You can [display links]({{site.baseurl}}/links/) for users to checkout in your portfolio
+- Use a [splash page]({{site.baseurl}}/splash/) with no header or footer
 - Include a preview of posts or not with `preview_posts: true`
 - Change the number of posts on each page with `paginate` in the config
 

@@ -12,4 +12,4 @@ This is a good theme for portfolios and blogs. It's not a good theme for meeting
 
 ---
 
-Visit the [blog](blog/) or [contact](contact/) the creator.
+Visit the [blog]({{site.baseurl}}) or [contact]({{site.baseurl}}/contact/) the creator.
