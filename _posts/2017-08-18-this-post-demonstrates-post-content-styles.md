@@ -9,7 +9,7 @@ tags: examples
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
 
-## Some great heading (h2)
+# Some great heading (h1)
 
 Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.
 
@@ -87,3 +87,12 @@ Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet b
 Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc.
+
+### Table
+
+Title 1 | Title 2 | Title 3 | Title 4
+--- | --- | --- | ---
+lorem | lorem ipsum | lorem ipsum dolor | lorem ipsum dolor sit
+lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur | lorem ipsum dolor sit amet | lorem ipsum dolor sit
+lorem ipsum dolor | lorem ipsum | lorem | lorem ipsum
+lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur

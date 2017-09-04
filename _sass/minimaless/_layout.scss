@@ -146,11 +146,8 @@
   list-style: none;
   margin: 10px 0 0 0;
   text-align: center;
-  @include media-query($on-palm) {
-    text-align: left;
-  }
 
-  a { height: 100%; width: 100%; }
+  li > a { border: 0; height: 100%; width: 100%; }
 
   li, li + li {
     margin: 0 7px;
@@ -172,6 +169,12 @@
   color: #111;
 }
 
+
+.landing-content .contact-icons {
+  @include media-query($on-palm) {
+    text-align: left;
+  }
+}
 
 
 .landing-content .contact-icons a, .site-footer .contact-icons a {
@@ -300,8 +303,14 @@
   animation: fadein .5s;
 }
 
-.post a {
+.contact a, .post a {
+  color: $text-color;
   font-weight: bold;
+  border-bottom: 1px solid $grey-color;
+  &:hover {
+    color: $grey-color;
+    text-decoration: none;
+  }
 }
 
 .post-list {
@@ -374,6 +383,16 @@
 .post-content {
   margin-bottom: $spacing-unit;
 
+  h1 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+    display: block;
+    border-bottom: 1px solid #eaecef;
+  }
+
   h2 {
     @include relative-font-size(2);
 
@@ -406,7 +425,7 @@
   color: lighten($grey-color-dark, 10%);
 }
 
-.tags .fa-tags { color: $grey-color; }
+.tags .fa-tags { color: $grey-color-dark; }
 
 .tag {
   @include relative-font-size(.8);

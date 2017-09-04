@@ -4,6 +4,15 @@ All notable changes to this project will be documented here.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### TODO:
+
+## 0.0.11 // 2017-08-19
+### Fixed
+- Fixed footer align left for palm devices
+- H1 font fixed
+- Fixed post `<a>` to be more distinct from `<strong>` text
+
+
 ## 0.0.10 // 2017-08-19
 ### Fixed
 - minor CSS fixes
