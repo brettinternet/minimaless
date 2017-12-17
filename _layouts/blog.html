@@ -27,15 +27,23 @@ layout: default
   {% if paginator.total_pages != 1 %}
     <div class="pagination">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous"><i class="fa fa-long-arrow-left"></i></a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous">
+          <div><i class="fa fa-caret-left"></i></div>
+        </a>
       {% else %}
-        <span class="previous disabled"><i class="fa fa-long-arrow-left"></i></span>
+        <span class="previous disabled">
+          <div><i class="fa fa-caret-left"></i></div>
+        </span>
       {% endif %}
       <span class="page-number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next"><i class="fa fa-long-arrow-right"></i></a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">
+          <div><i class="fa fa-caret-right"></i></div>
+        </a>
       {% else %}
-        <span class="next disabled"><i class="fa fa-long-arrow-right"></i></span>
+        <span class="next disabled">
+          <div><i class="fa fa-caret-right"></i></div>
+        </span>
       {% endif %}
     </div>
   {% endif %}

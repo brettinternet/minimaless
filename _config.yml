@@ -9,7 +9,7 @@ description: >
 baseurl: "/minimaless" # the subpath of your site, e.g. /blog
 url: "http://www.brettgardiner.net/minimaless" # the base hostname & protocol for your site, e.g. http://example.com
 
-website: https://google.com
+website: https://www.brettinternet.com
 github_username:  brettinternet
 bitbucket_username: brettinternet
 codepen_username: brettinternet
@@ -18,6 +18,7 @@ twitter_username: brettinternet
 facebook_username: brettinternet
 instagram_username: brettinternet
 keybase_username: brettinternet
+paypal_username: brettinternet
 
 # use Font Awesome icon names http://fontawesome.io/icons/
 links:
@@ -35,6 +36,10 @@ links:
   - url: https://google.com
     title: Cool Site
 
+
+collections:
+  - example
+
 # disqus:
 #   shortname: 
 
@@ -43,7 +48,7 @@ links:
 minimaless:
   date_format: "%b %-d, %Y"
 preview_posts: true
-permalink: /:year/:title
+permalink: /:title
 paginate: 2
 paginate_path: "/page:num/"
 
@@ -66,6 +71,7 @@ plugins:
 
 markdown: kramdown
 theme: minimaless
+# remote_theme: brettinternet/minimaless # uncomment to allow GitHub to build for GitHub Pages - https://github.com/blog/2464-use-any-theme-with-github-pages
 
 include:
   - _pages

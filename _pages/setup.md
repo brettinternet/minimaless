@@ -28,9 +28,11 @@ permalink: /setup/
 
 This setup guide is for deploying to Github-pages. This is a very specific method, and if you're looking for a more general setup guide, check out [this guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
+Now that GitHub does build custom Jekyll themes, you can simply add `remote_theme: brettinternet/minimaless` to the `_config.yml` file.
+Consult GitHub [blog post](https://github.com/blog/2464-use-any-theme-with-github-pages) on the topic for more information.
 The easiest method is to simply [fork this repo](https://github.com/brettinternet/minimaless#fork-destination-box){:target="_blank"}<i class="fa fa-external-link"></i>.
 Then, edit the files you'd like.
-Because Github doesn't allow automated builds from custom Jekyll themes, there's another simple work around illustrated here.
+Because Github ~~doesn't allow~~ used to not allow automated builds from custom Jekyll themes, there's another simple work around illustrated below.
 
 I prefer the following unique method because using `bundle update` to update the gems is a simple task. I use [Travis CI](https://travis-ci.org) to build from a Rakefile similar to Github's Rakefile for building Github-pages sites.
 Similar upgrading can be performed from upstream if you choose to fork the theme [using git](https://mmistakes.github.io/minimal-mistakes/docs/upgrading/#use-git).

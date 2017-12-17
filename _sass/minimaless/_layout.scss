@@ -19,7 +19,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $text-color;
   }
 }
 
@@ -106,12 +106,20 @@
 
 .pagination {
   text-align: center;
-  margin: $spacing-unit * 2 0;
-  // color: $grey-color-light;
+  margin: $spacing-unit 0;
+
+  div {
+    display: inline-block;
+    width: 6px;
+    height: 100%;
+  }
+
+  a:hover { text-decoration: none; }
 
   & > a { color: $grey-color-dark; }
+  .disabled { color: $grey-color-light; }
 
-  .fa-long-arrow-left, .fa-long-arrow-right { transform: translateY(3px); }
+  .fa-caret-left, .fa-caret-right { transform: translateY(2px); }
 
   .page-number {
     color: $grey-color !important;
@@ -126,8 +134,6 @@
   .next {
     margin-left: $spacing-unit;
   }
-
-  .disabled > i { color: $grey-color-light; }
 }
 
 
@@ -144,7 +150,7 @@
 
 .contact-icons {
   list-style: none;
-  margin: 10px 0 0 0;
+  margin: 0;
   text-align: center;
 
   li > a { border: 0; height: 100%; width: 100%; }

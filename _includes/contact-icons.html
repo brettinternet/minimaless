@@ -60,6 +60,12 @@
   </li>
   {% endif %}
 
+  {% if site.paypal_username %}
+  <li>
+    <a href="https://www.paypal.me/{{ site.paypal_username }}/10" target="_blank"><i class="icon fa fa-paypal"></i></a>
+  </li>
+  {% endif %}
+
   {% for file in site.static_files %}
     {% if file.ext == 'asc' %}
       <li>

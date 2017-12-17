@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### TODO:
 
+## 0.0.12 // 2017-12-12
+### Fixed
+- Footer icons vertical alignment
+- Other minor CSS fixes
+
+### Added
+- PayPal icon in contact
+
 ## 0.0.11 // 2017-08-19
 ### Fixed
 - Fixed footer align left for palm devices
