@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Features & Setup
-permalink: /setup2/
+permalink: /setup/
 ---
 
 # Features
@@ -80,4 +80,3 @@ gem "minimaless"
 10. Turn on building in Travis CI for your site's repo. Then, push your site's source code to a new branch called `source` and the build should trigger and run the Rakefile. Once the build is push to `master`, Travis CI may attempt to build the master repo (and fail) unless you select the option to only run Travis CI when a `.travis.yml` is present.
     - Instead of using Travis CI to build your site remotely when you push, you could also build your site locally and push your site to a separate `gh-pages` branch by [following these instructions](https://gist.github.com/cobyism/4730490).
 11. You may consider using something like [prose.io](http://prose.io) to manage your blog posts from the web.
-
