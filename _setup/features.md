@@ -1,10 +1,8 @@
 ---
+title: Features
 layout: page
-title: Features & Setup
-permalink: /setup2/
+description: Explore the features of this simple theme.
 ---
-
-# Features
 
 - Blog in markdown using [Jekyll](jekyllrb.com)!
 - Include any Font Awesome icon <i class="fa fa-check-square"></i>

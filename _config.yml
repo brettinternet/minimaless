@@ -19,6 +19,7 @@ facebook_username: brettinternet
 instagram_username: brettinternet
 keybase_username: brettinternet
 paypal_username: brettinternet
+stackoverflow_username: brettinternet # (developer story)
 
 # use Font Awesome icon names http://fontawesome.io/icons/
 links:
@@ -38,10 +39,10 @@ links:
 
 
 collections:
-  - example
+  - setup
 
 # disqus:
-#   shortname: 
+#   shortname:
 
 # Minimaless date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this

@@ -18,6 +18,12 @@
   </li>
   {% endif %}
 
+  {% if site.stackoverflow_username %}
+  <li>
+    <a href="https://stackoverflow.com/story/{{ site.stackoverflow_username }}" target="_blank"><i class="icon fa fa-stack-overflow"></i></a>
+  </li>
+  {% endif %}
+
   {% if site.codepen_username %}
   <li>
     <a href="https://codepen.io/{{ site.codepen_username }}" target="_blank"><i class="icon fa fa-codepen"></i></a>
