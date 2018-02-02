@@ -21,22 +21,6 @@ keybase_username: brettinternet
 paypal_username: brettinternet
 stackoverflow_username: brettinternet # (developer story)
 
-# use Font Awesome icon names http://fontawesome.io/icons/
-links:
-  - url: https://google.com
-    title: Google
-  - url: https://google.com
-    title: My Resume
-    icon: paperclip
-  - url: https://google.com
-    title: My Portfolio
-    icon: user-circle
-  - url: https://google.com
-    title: A really cool blog I like
-    icon: false
-  - url: https://google.com
-    title: Cool Site
-
 
 collections:
   - setup
@@ -50,7 +34,7 @@ minimaless:
   date_format: "%b %-d, %Y"
 preview_posts: true
 permalink: /:title
-paginate: 2
+paginate: 10 # increase this value to reflect how many posts per page you want
 paginate_path: "/page:num/"
 
 # If you want to link only specific pages in your header, uncomment

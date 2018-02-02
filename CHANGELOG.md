@@ -4,7 +4,13 @@ All notable changes to this project will be documented here.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-### TODO:
+## 0.0.13 // 2017-2-2
+### Added
+- Additional whitespace above `h1` and `h2` tags
+- Tags page and clickable tagging navigation (see the [Features & Setup](/_pages/setup.md) page for more information)
+
+### Removed
+- Removed links page
 
 ## 0.0.12 // 2017-12-12
 ### Fixed

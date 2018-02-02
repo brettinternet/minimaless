@@ -51,6 +51,18 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
+h1 {
+  margin-top: $spacing-unit * 1.5;
+}
+
+h2 {
+  margin-top: $spacing-unit * 1.25;
+}
+
+h3, h4 {
+  margin-top: $spacing-unit;
+}
+
 pre {
   margin-top: $spacing-unit / 6;
 }

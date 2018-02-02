@@ -12,25 +12,26 @@ permalink: /setup/
 <i class="fa fa-check-square"></i>
 ```
 - Use icons and other HTML mixed with your markdown
-  (ex: [external link<i class="fa fa-external-link"></i>](https://google.com){:target="_blank"})
+  (ex: [external link<i class="fa fa-external-link"></i>](https://google.com){:target="\_blank"})
 ```
 [external link<i class="fa fa-external-link"></i>](https://google.com){:target="_blank"}
 ```
-- You can [display links]({{site.baseurl}}/links/) for users to checkout in your portfolio
 - Use a [splash page]({{site.baseurl}}/splash/) with no header or footer
 - Include a preview of posts or not with `preview_posts: true`
 - Change the number of posts on each page with `paginate` in the config
+- [List entries by tag]({{site.baseurl}}/tags/) (see setup below to learn how to setup tag pages)
 
 
----
+
 
 # Setup
 
+## Deploy
 This setup guide is for deploying to Github-pages. This is a very specific method, and if you're looking for a more general setup guide, check out [this guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
 Now that GitHub does build custom Jekyll themes, you can simply add `remote_theme: brettinternet/minimaless` to the `_config.yml` file.
 Consult GitHub [blog post](https://github.com/blog/2464-use-any-theme-with-github-pages) on the topic for more information.
-The easiest method is to simply [fork this repo](https://github.com/brettinternet/minimaless#fork-destination-box){:target="_blank"}<i class="fa fa-external-link"></i>.
+The easiest method is to simply [fork this repo](https://github.com/brettinternet/minimaless#fork-destination-box){:target="\_blank"}<i class="fa fa-external-link"></i>.
 Then, edit the files you'd like.
 Because Github ~~doesn't allow~~ used to not allow automated builds from custom Jekyll themes, there's another simple work around illustrated below.
 
@@ -80,3 +81,28 @@ gem "minimaless"
 10. Turn on building in Travis CI for your site's repo. Then, push your site's source code to a new branch called `source` and the build should trigger and run the Rakefile. Once the build is push to `master`, Travis CI may attempt to build the master repo (and fail) unless you select the option to only run Travis CI when a `.travis.yml` is present.
     - Instead of using Travis CI to build your site remotely when you push, you could also build your site locally and push your site to a separate `gh-pages` branch by [following these instructions](https://gist.github.com/cobyism/4730490).
 11. You may consider using something like [prose.io](http://prose.io) to manage your blog posts from the web.
+
+
+
+## Tags
+
+Make a new folder called `tag` where you will add markdown files for each new tag you use on your site.
+
+```
+minimaless
+├─ tag
+│  └─ kittens.md
+└─ _posts
+```
+
+Create a new markdown file with the tag as the file name (eg. `<tag name>.md`). You only need to set up the header information. For example, if the tag is `kittens`, then use the following header:
+
+```yml
+---
+layout: tags
+tag: kittens
+permalink: /tag/kittens/
+---
+```
+
+This must be done for every new tag you create. This is the page that users will see when they click on a tag. [View the tag page here]({{site.baseurl}}/tags/).

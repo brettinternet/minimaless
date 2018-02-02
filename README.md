@@ -1,8 +1,8 @@
 # minimaless
 
-It's like [minima](https://jekyll.github.io/minima/), but less. ✨
+It's like the [minima](https://jekyll.github.io/minima/) theme, but with _less noise_ and more functionality. ✨
 
-See the [demo site](https://brettinternet.github.io/minimaless/). Follow these steps to [setup](/_pages/setup.md) your own Jekyll site with this theme.
+See the [demo site](https://brettinternet.github.io/minimaless/) or follow these steps to [setup](/_pages/setup.md) your own Jekyll site with this theme.
 
 ![minimaless screenshot preview](/screenshot.png)
 
@@ -62,6 +62,31 @@ The site's default CSS has now moved to a new place within the gem itself, [`ass
   - Copy the `assets/` folder from there into the root of `<your-site>`
   - Change whatever values you want, inside `<your-site>/assets/main.scss`
 - Edit index.md to change what appears on the site's splash/landing page.
+
+--
+
+### Tags
+
+Make a new folder called `tag` where you will add markdown files for each new tag you use on your site.
+
+```
+minimaless
+├─ tag
+│  └─ kittens.md
+└─ _posts
+```
+
+Create a new markdown file with the tag as the file name (eg. `<tag name>.md`). You only need to set up the header information. For example, if the tag is `kittens`, then use the following header:
+
+```yml
+---
+layout: tags
+tag: kittens
+permalink: /tag/kittens/
+---
+```
+
+This must be done for every new tag you create. This is the page that users will see when they click on a tag to display the list of posts for each tag. [View the tag page here](https://brettinternet.github.io/minimaless/tags/).
 
 --
 

@@ -164,6 +164,9 @@
 
   li:first-child { margin-left: 0; }
   li:last-child { margin-right: 0; }
+  @include media-query($on-palm) {
+    li:first-child, li:last-child { margin: 0 7px; }
+  }
 
 
   .icon {
@@ -281,6 +284,10 @@
 .page-content {
   padding: $spacing-unit 0;
   min-height: $content-height;
+
+  & > .wrapper > h1 {
+    margin-top: $spacing-unit / 2;
+  }
 }
 
 .page-heading {
@@ -290,7 +297,7 @@
   .blog li:nth-child(#{$i}),
   .contact .contact-icons li:nth-child(#{$i}),
   .splash p:nth-child(#{$i}),
-  .splash .contact-icons li:nth-child(#{$i}), .site-links p:nth-child(#{$i}),
+  .splash .contact-icons li:nth-child(#{$i}),
   .landing-content .about p:nth-child(#{$i}),
   .pagination span:nth-child(#{$i}) {
     -webkit-animation: fadein .5s + $i/2; /* Safari, Chrome and Opera > 12.1 */
@@ -324,7 +331,7 @@
   list-style: none;
 
   > li h2 {
-    // margin-bottom: $spacing-unit;
+    margin: 0 0 $spacing-unit / 4 0;
     line-height: 1em;
   }
 }
@@ -346,29 +353,6 @@
 
 
 /**
- * Links page
- */
-
-.site-links {
-  margin: 20px auto;
-  max-width: 310px;
-  a { color: inherit; }
-
-  p {
-    text-align: center;
-    list-style: none;
-    width: 100%;
-    margin: 5px 0;
-    .icon {
-      font-size: 1.5em;
-      margin-right: 5px;
-    }
-  }
-}
-
-
-
-/**
  * Posts
  */
 .post-header {
@@ -376,7 +360,7 @@
 }
 
 .post-title {
-  // margin-bottom: 5px;
+  margin-top: $spacing-unit / 2;
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
@@ -393,17 +377,17 @@
     @include relative-font-size(2);
 
     @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
+      @include relative-font-size(1.8);
     }
     display: block;
     border-bottom: 1px solid #eaecef;
   }
 
   h2 {
-    @include relative-font-size(2);
+    @include relative-font-size(1.85);
 
     @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
+      @include relative-font-size(1.7);
     }
   }
 
