@@ -1,5 +1,7 @@
 # minimaless
 
+[![Gem Version](https://img.shields.io/gem/v/minimaless.svg)](https://rubygems.org/gems/jekyll-admin)
+
 It's like the [minima](https://jekyll.github.io/minima/) theme, but with _less noise_ and more functionality. ✨
 
 See the [demo site](https://brettinternet.github.io/minimaless/) or follow these steps to [setup](/_pages/setup.md) your own Jekyll site with this theme.
